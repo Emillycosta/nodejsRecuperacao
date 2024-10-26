@@ -2,7 +2,7 @@ const express = require('express')
 const controllerPessoa = require('../controllers/pessoa')
 
 // Inicializando as rotas do express
-const router = express.Router('operaçao')
+const router = express.Router()
 
 // Criando as rotas
 router.get('/', controllerPessoa.GetPessoas)

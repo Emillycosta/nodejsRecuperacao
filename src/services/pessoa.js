@@ -1,9 +1,9 @@
-const ModelPessoa = require('../routes/pessoa')
+const ModelPessoa = require('../models/pessoa')
 
 // criando a classe servicePessoa
 class ServicePessoa {
     GetPessoas() {
-        return ModelPessoa.GetPessoas()
+        return ModelPessoa.findAll()
     }
     CreatePessoa(name) {
         // fazer verificações - se mandou o name
